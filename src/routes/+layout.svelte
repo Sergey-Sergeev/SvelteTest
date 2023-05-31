@@ -2,10 +2,9 @@
     <dir class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Sergey Sergeev</a>
         <div class="nav-links">
-            <a href="/about" class="link">About me</a>
-            <a href="/blog" class="link">Blog</a>
-            <a href="/projects" class="link">My projects</a>
-            <a href="/contact" class="link">Contacts</a>
+            {#each nav as link}
+                <a href={link.href} class="link">{link.title}</a>
+            {/each}
         </div>
     </dir>
 </nav>
@@ -20,3 +19,30 @@
         margin: 50px auto;
     }
 </style>
+
+<script>
+    const nav = 
+    [
+        {
+            title: "Обо мне",
+            href: "/about"
+        },
+        {
+            title: "Блог",
+            href: "/blog"
+        },
+        {
+            title: "Портфолио",
+            href: "/project"
+        },
+        {
+            title: "Контакты",
+            href: "/contact"
+        },
+        {
+            title: "temp",
+            href: "/temp"
+        }
+    ]
+
+</script>
