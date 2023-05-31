@@ -1,6 +1,6 @@
 <nav>
     <dir class="nav-container">
-        <a href="/" class="nav-logo" title="Back to Homepage">Andrey Zorin</a>
+        <a href="/" class="nav-logo" title="Back to Homepage">Sergey Sergeev</a>
         <div class="nav-links">
             <a href="/about" class="link">About me</a>
             <a href="/blog" class="link">Blog</a>

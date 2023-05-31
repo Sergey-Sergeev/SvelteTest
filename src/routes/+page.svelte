@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Andrey Zornov</title>
+    <title>Sergey Sergeev</title>
 </svelte:head>
 
 <div class="container">
