@@ -3,8 +3,8 @@
     let expenseName = ""
     let expenseSum = "";
 
-    function addExpense() {
-        if(expenseName !== "" && (+expenseSum) !== NaN) {
+    function addExpense() {        
+        if(expenseName !== "" && expenseSum !== "" && expenseSum != null) {
             expensesList = [
                 ...expensesList,
                 {
@@ -35,7 +35,7 @@
             </div>
             <div>
                 <p><strong>Сумма:</strong></p>
-                <input bind:value={expenseSum}/>
+                <input bind:value={expenseSum} type='number'/>
             </div>
         </form>
         <button class="add_expense" on:click={addExpense}>Добавить</button>        
@@ -91,12 +91,6 @@
         flex-direction:row;
     }
 
-    .form_and_button button {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
     input {
         display: block;
         min-width: 250px;
@@ -117,5 +111,42 @@
     .add_expense:hover {
         background-color: rgb(3, 177, 58)    
     }
-    
+
+    .add_expense {
+        position: absolute;
+        bottom: 15px;
+        right: 0;
+    }
+
+    table {
+        min-width: 100%;
+        border-radius: 25px;
+        border-color: rgba(128, 128, 128, 0.655);
+        border-width: 2px;
+        border-style: solid; 
+        border-collapse: collapse;       
+    }
+
+    th {        
+        text-align: left;
+        padding: 10px;
+        border-radius: 5px;
+        border-color: rgba(128, 128, 128, 0.655);
+        border-width: 2px;
+        border-style: solid; 
+    }
+
+    .delete_expense {
+        width: 150px;
+        height: 40px;
+        background-color: rgb(154, 15, 0);
+        color: white;
+        border-width: 0;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+
+    .delete_expense:hover {
+        background-color: rgb(204, 20, 0);
+    }
 </style>
