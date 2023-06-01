@@ -54,6 +54,17 @@
 </main>
 
 <style>
+    .add-todo {
+        background-color: antiquewhite;
+        border-color: black;
+        border-width: 1px;
+        margin: 5px;
+    }
+
+    .add-todo:hover {
+        background-color: rgba(250, 235, 215, 0.69);
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -129,7 +140,7 @@
 
     button.complete,
     button.complete:hover {
-        color: brown;
+        color: cadetblue;
         transition: color 100ms ease-out;
     }
 
