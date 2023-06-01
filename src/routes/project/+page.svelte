@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div class="container">
-    <h1>Мои проукты</h1>
+    <h1>Мои продукты</h1>
     <div class="apps">
         {#each routes as page}
             <div class="app">

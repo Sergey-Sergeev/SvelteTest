@@ -46,9 +46,9 @@
             isShow: true
         },
         {
-            title: "temp",
-            href: "/temp",
-            isShow: false
+            title: "Учёты расходов",
+            href: "/expense",
+            isShow: true
         }
     ]
 

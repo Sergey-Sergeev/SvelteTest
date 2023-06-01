@@ -9,7 +9,6 @@
                 <div class="info-text">
                     <h1> 
                         <p class="animate-text-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="text-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non totam sit necessitatibus inventore </p>
                     </h1>
                 </div>
                 <h2 class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dicta voluptas pariatur alias rerum assumenda eum eligendi aperiam. Officiis vel quia fugiat quidem adipisci autem dolorum, exercitationem amet perferendis excepturi.</h2>
