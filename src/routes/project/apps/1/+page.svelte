@@ -39,12 +39,12 @@
     <div class="todos">
         {#each todoList as item, index}
             <div class="todo" class:completed={item.completed}>
-                <span class="todo__text">{item.task}</span>
-                <div class="todo__buttons">
+                <span class="todo_text">{item.task}</span>
+                <div class="todo_buttons">
                     <button class="complete" on:click={() => complete(index)}>
                         <Icon name="check-mark"/>
                     </button>
-                    <button class="delete" onclick={() => remove(index)}>
+                    <button class="delete" on:click={() => remove(index)}>
                         <Icon name="delete" />
                     </button>
                 </div>
@@ -61,7 +61,7 @@
         min-height: 100%;
         padding: 5vmin;
         box-sizing: border-box;
-        background: antiquewhite;
+        background: rgb(142, 197, 243);
     }
 
     form {
@@ -96,7 +96,7 @@
         align-items: center;
     }
 
-    .todo\_\_buttons {
+    .todo_buttons {
         display: flex;
         align-items: center;
         margin-left: 1rem;
@@ -114,7 +114,6 @@
         text-align: center;
         font-size: 1.5rem;
         margin: 2em 0;
-
     }
 
     button {
@@ -138,7 +137,7 @@
         color: slategray
     }
 
-    .todo.completed .todo\_\_text {
+    .todo.completed .todo_text {
         text-decoration: line-through;
     }
 
